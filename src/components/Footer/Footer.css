@@ -1,0 +1,49 @@
+.footer {
+  width: 100%;
+  max-width: 512px;
+  margin: 4rem auto 0;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.8s forwards;
+}
+
+.footer-copyright {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.footer-credit {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #6b7280;
+}
+
+/* Dark mode styles */
+.dark .footer {
+  color: #6b7280;
+}
+
+.dark .footer-link:hover {
+  color: #9ca3af;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    font-size: 0.8rem;
+    padding: 2rem 0;
+  }
+}
